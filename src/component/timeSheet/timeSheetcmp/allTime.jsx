@@ -645,7 +645,7 @@ const AllTime = () => {
               0min
             </span>
             <span className="dialog-btns">
-              <button className="btn" onClick={handleOpenTask}>Log these time entries</button>
+              <button className="btn">Log these time entries</button>
             </span>
           </span>
         </DialogActions>
@@ -681,8 +681,8 @@ const AllTime = () => {
           </span>
         </DialogTitle>
         <DialogContent>
-          <div className="dialog-row1">
-              <span className="dialog-row1-col-head">Project</span>
+          <div className="dialog-row2">
+              <span className="dialog-row1-col-head" style={{fontSize:"1.1rem",marginBottom:"1rem"}}>You can pick a task from the list below to associate with this time log</span>
               <span className="dialog-row1-col-box" style={{width:"100%"}}>
                 <FormControl
                   size="small"
@@ -707,7 +707,7 @@ const AllTime = () => {
                   </Select>
                 </FormControl>
               </span>
-            </div>
+              </div>
         </DialogContent>
         <DialogActions
           style={{
